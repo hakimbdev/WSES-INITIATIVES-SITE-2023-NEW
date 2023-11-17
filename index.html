@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WSES Initiative</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header id="main-header">
+		<div class="container">
+			<div class="logo">
+			<img src="../WSES INITIATIVES SITE 2023 NEW/images/Black Grey Simple Modern Name Logo.png" alt="">
+		</div>
+		</div>
+	</header>
+
+	<nav id="navbar">
+		<div class="container">
+			<ul id="navbar1">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="solutions.html">Solutions</a></li>
+				<li><a href="innovation.html">Innovation</a></li>
+				<li><a href="partners.html">Partners</a></li>
+				<li><a href="careers.html">Careers</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="team.html">Team</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<section id="showcase">
+
+			<div class="bodybanner">
+			<div class="slider-container">
+				<div class="slides">
+					<div class="slide">
+						<img src="../WSES INITIATIVES SITE 2023 NEW/images/wfs1.jpg" alt="Slide 1">
+					</div>
+					<div class="slide">
+						<img src="../WSES INITIATIVES SITE 2023 NEW/images/wfs1.jpg" alt="Slide 2">
+					</div>
+					<div class="slide">
+						<img src="../WSES INITIATIVES SITE 2023 NEW/images/wfs5.jpg" alt="Slide 3">
+					</div>
+					<!-- Add more slides as needed -->
+				</div>
+			</div>
+			
+			<script>
+				let currentSlide = 0;
+				const slides = document.querySelector('.slides');
+				const totalSlides = document.querySelectorAll('.slide').length;
+			
+				function showSlide(index) {
+					if (index >= totalSlides) {
+						currentSlide = 0;
+					} else if (index < 0) {
+						currentSlide = totalSlides - 1;
+					} else {
+						currentSlide = index;
+					}
+			
+					const translateValue = -currentSlide * 100 + '%';
+					slides.style.transform = 'translateX(' + translateValue + ')';
+				}
+			
+				// You can add navigation buttons or automatic sliding here
+			
+				// Example: Automatic sliding every 3 seconds
+				setInterval(function () {
+					showSlide(currentSlide + 1);
+				}, 3000);
+			</script>
+			</div>
+		</div>
+		</section>
+
+	<div class="container">
+		<section id="main">
+			<h1>Global Water Crisis</h1>
+			<p>Water scarcity is rapidly becoming a defining challenge of the 21st century. As populations grow,
+			climate patterns shift, and industries expand, the demand for water has reached unprecedented
+			levels. According to the World Health Organization (WHO), by 2025, nearly two-thirds of the
+			global population could be living in water-stressed conditions. The urgency to address this crisis
+			has never been more critical, and initiatives like WFS are stepping up to
+			confront the challenge head-on.
+			</p>
+
+
+			<h1>A Visionary Approach</h1>
+			<p>WFS Initiative which refers to Water For Survival Initiative is not just another organization; it is a visionary force
+				determined to revolutionize the way we approach water solutions. The initiative's primary goal is
+				to provide accessible, sustainable, and reliable water sources to communities worldwide within
+				the next two to three decades. What sets WSES Initiative apart is its holistic approach,
+				combining innovative technologies, community engagement, global partnerships, and education
+				to address the multifaceted nature of the water crisis.
+			</p>
+
+			<h1>Community Engagement</h1>
+			<p>Recognizing the intrinsic link between water solutions and community well-being,
+			WSES Initiative actively engages with local communities. Understanding
+			that every community faces unique challenges and possesses distinct cultural perspectives, the
+			initiative tailors its solutions to meet specific needs. By involving communities in the process,
+			WFS ensures that the implemented solutions are not only effective but also
+			culturally sensitive and sustainable in the long run.</p>
+		</section>
+
+		<aside id="sidebar">
+		<p>It is a visionary force
+			determined to revolutionize the way we approach water solutions. The initiative's primary goal is
+			to provide accessible, sustainable, and reliable water sources to communities worldwide within
+			the next two to three decades.</p>
+		</aside>
+
+		<aside id="sidebar">
+		<p>By involving communities in the process,
+		WSES ensures that the implemented solutions are not only effective but also
+		culturally sensitive and sustainable in the long run.
+</p>
+		</aside>
+
+		<aside id="sidebar">
+		<p>In a world where the availability of clean and safe water is increasingly uncertain, initiatives like
+		WSES play a pivotal role in shaping a more secure and sustainable future. By
+		setting a bold target to provide water solutions across the planet within the next 20 to 30 years,
+		WFS demonstrates the power of human innovation,
+		collaboration, and determination. As we navigate the challenges of the 21st century, the success
+		of initiatives like WFS will not only be measured in gallons of water provided
+		but in the lives transformed and the resilience of communities secured for generations to come.</p>
+		</aside>
+	</div>
+
+	<footer id="main-footer">
+		<p>Copyright &copy; 2023 WSES Initiative</p>
+	</footer>
+</body>
+</html>
